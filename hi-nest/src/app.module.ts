@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
+//데코레이터, 클래스를 함수화
 @Module({
   imports: [],
   controllers: [AppController],
