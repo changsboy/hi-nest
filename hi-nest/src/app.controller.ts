@@ -1,6 +1,8 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 
+//controller 는 url을 위한것!
+
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
@@ -12,7 +14,7 @@ export class AppController {
 
   @Get("/hello")
   sayHello(): string{
-    return "Hello everyone";
+    return this.appService.getHi();
   }
     
 }
