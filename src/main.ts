@@ -1,3 +1,4 @@
+//name 변경 불가
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
